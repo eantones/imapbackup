@@ -11,6 +11,9 @@ setup(name='imapbackup',
       install_requires=[
           'imapclient',
       ],
+      url='https://github.com/nuobit/imapbackup',
+      download_url = 'https://github.com/eantones/imapbackup/archive/0.1.tar.gz',
+      keywords = ['imap', 'backup', 'incremental'],
       classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Environment :: Console',
