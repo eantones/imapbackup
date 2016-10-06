@@ -24,6 +24,7 @@ setup(name='imapbackup',
         'License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)',
         'Operating System :: POSIX :: Linux',
         'Natural Language :: English',
+        'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.5',
         'Topic :: System :: Archiving :: Backup',
       ]
