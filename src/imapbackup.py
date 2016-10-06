@@ -509,6 +509,6 @@ def restore(from_filename, to_host, to_account, to_password, to_ssl=True):
 # * Save all folder flags.
 # * Restore method still in development, it does not work at the moment
 # * On restore, set the date on messages withuot "Date" source header.
-
+# * Option to exclude any folder, for instance the folder Trash
          
 
