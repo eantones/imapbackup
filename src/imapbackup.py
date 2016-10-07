@@ -314,7 +314,7 @@ def backup(from_host, from_account, from_password, to_filename, from_port=None, 
     folders = []
     for v in M.list_folders():
         subscribed = v[2] in subscribed_folders
-        folders.append(tuple(list(v) + [subscribed]))
+        folders.append((*v,subscribed))
 
 
     fmb = dict([(x[2], x[3]) for x in folders])
@@ -489,7 +489,7 @@ def restore(from_filename, to_host, to_account, to_password, to_ssl=True):
                          where m.mailbox_id=? and
                                m.message_id not in (%s)""" % ','.join('?'*len(dest_message_ids))
 
-            src_messages = src.c.execute(src_sql, tuple([mailbox_id] + list(dest_message_ids)))
+            src_messages = src.c.execute(src_sql, (mailbox_id, *dest_message_ids))
             for message_id, message_pickle_bz2 in src_messages:
                 message_pickle = bz2.decompress(message_pickle_bz2)
                 message = pickle.loads(message_pickle)
