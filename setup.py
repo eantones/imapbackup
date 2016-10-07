@@ -8,6 +8,7 @@ setup(name='imapbackup',
       py_modules=['imapbackup.imapbackup'],
       package_dir={'imapbackup': 'src'},
       install_requires=[
+          'tzlocal',
           'imapclient',
       ],
       url='https://github.com/nuobit/imapbackup',
