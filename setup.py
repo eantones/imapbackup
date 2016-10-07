@@ -2,7 +2,7 @@ from distutils.core import setup
 
 
 setup(name='imapbackup',
-      version='0.0.1',
+      version='v0.1.0',
       author="NuoBiT Solutions, S.L., Eric Antones",
       author_email='eantones@nuobit.com',
       py_modules=['imapbackup.imapbackup'],
