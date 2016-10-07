@@ -314,7 +314,7 @@ def backup(from_host, from_account, from_password, to_filename, from_port=None, 
     folders = []
     for v in M.list_folders():
         subscribed = v[2] in subscribed_folders
-        folders.append((*v, subscribed))
+        folders.append(tuple(list(v) + [subscribed]))
 
 
     fmb = dict([(x[2], x[3]) for x in folders])
