@@ -503,12 +503,11 @@ def restore(from_filename, to_host, to_account, to_password, to_ssl=True):
     dest.logout()
     src.logout()
 
-#TODO
-# * Refactor everything
-# * Backup to folder level, more efficient and dealing with smaller files.
-# * Save all folder flags.
-# * Restore method still in development, it does not work at the moment
-# * On restore, set the date on messages withuot "Date" source header.
-# * Option to exclude any folder, for instance the folder Trash
+# TODO: Refactor everything
+# TODO: Backup to folder level, more efficient and dealing with smaller files.
+# TODO: Save all folder flags.
+# TODO: Restore method still in development, it does not work at the moment
+# TODO: On restore, set the date on messages withuot "Date" source header.
+# TODO: Option to exclude any folder, for instance the folder Trash
          
 
